@@ -32,7 +32,7 @@ for(let i = 0; i < 20; i++){
 const peopleJSON = JSON.stringify(people);
 console.log(peopleJSON);
 
-fs.writeFile('person.json', peopleJSON, (err) => {
+fs.writeFile('people.json', peopleJSON, (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
 });
