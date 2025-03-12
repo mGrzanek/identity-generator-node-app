@@ -29,7 +29,7 @@ for(let i = 0; i < 20; i++){
     people.push(person);
 }
 
-const peopleJSON = JSON.stringify(people);
+const peopleJSON = JSON.stringify(people, null, ' ');
 console.log(peopleJSON);
 
 fs.writeFile('people.json', peopleJSON, (err) => {
